@@ -27,9 +27,10 @@
                         </a>
                 <!-- KONTENER NAV -->
                 <nav >
+                    <div>
                     <ul class="navigation-menu">
                         <li>
-                            <a href="index.html">Agencja</a>
+                            <a href="index.html" class="active-agency">Agencja</a>
                         </li>
                         <li>
                             <a href="portfolio.html">Portfolio</a>
@@ -38,6 +39,7 @@
                             <a href="#Kontakt">Kontakt</a>
                         </li>
                     </ul>
+                    </div>
                 </nav>
                 <ul class="contact-links-header">
                   <li>
@@ -63,9 +65,17 @@
                     <h1 class="main-page-header">
                         EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
                     </h1>
-                    <button type="button" class="main-buttons">
+                      <div class="backdrop is-hiddem" data-modal>
+                     <div class="modal">
+                    <button type="button" class="close-btn" data-modal-close>x
+                     </button>
+                     </div>
+                     </div>
+                    <button data-modal-open type="button" class="main-buttons">
                         Zamów usługe
                     </button>
+                    
+                    </div>
                     </div>
                 </div>
             </div>
@@ -138,29 +148,32 @@
                 <div  class="container">
                     <h2 class="main-list-title">Czym się zajmujemy</h2>
                     <ul class="main-list">
-                        <li >
-                            <img
+                        <li class="thumb">
+                            <img 
                                 src="images/1.jpg"
                                 alt="pisanie kodu na klawiaturze podłączonej pod tablet"
                                 width="370"
                                 height="294"
                             />
+                            <h3 class="label">aplikacje komputerowe</h3>
                         </li>
-                        <li >
+                        <li class="thumb">
                             <img
                                 src="images/2.jpg"
                                 alt="konfigurowanie układu strony na laptopie, ustawianie rezponsywności wzlędem telefonu"
                                 width="370"
                                 height="294"
                             />
+                            <h3 class="label">aplikacje mobilne</h3>
                         </li>
-                        <li >
+                        <li class="thumb ">
                             <img
                                 src="images/3.jpg"
                                 alt="wybieranie koloru na tablecie z palety html"
                                 width="370"
                                 height="294"
                             />
+                            <h3 class="label">rozwiązania graficzne</h3>
                         </li>
                     </ul>
                     </div>
@@ -468,5 +481,6 @@
                  </section>
             </footer>
         </main>
+         <script src="./js/modal.js"></script>
     </body>
 </html>
