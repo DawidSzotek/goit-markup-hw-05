@@ -234,6 +234,7 @@ body {
     font-size: 16px;
     color: var(--contacts-header-color);
     text-align: center;
+    
 }
 .description {
     display: flex;
@@ -575,6 +576,7 @@ body {
   background: rgba(33, 150, 243, 0.9);
   transition-delay: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .overlay-text {
   font-weight: 400;
@@ -590,10 +592,4 @@ body {
     cursor: pointer;
      transition-delay: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     
-
-}   
-.product-center{
-    position: relative;
-
 }
