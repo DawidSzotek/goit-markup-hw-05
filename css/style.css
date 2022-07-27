@@ -592,6 +592,7 @@ body {
 }
 .test-test{
     background-color: #ffffff;
+    position: absolute;
 }
 .overlay-box:hover{
       cursor: pointer;
