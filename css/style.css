@@ -78,6 +78,8 @@ body {
 .footer-navigation a {
     text-decoration: none;
     color: #ffffff;
+    fill:var(--body-background-color)
+
 }
 .navigation a:focus,
 .navigation a:hover,
@@ -409,19 +411,18 @@ body {
     margin: 0;
 }
 .list-footer-socialmedia-menu {
-    display: inline-flex;
+    display: flex;
     padding-top: 20px;
     gap: 10px;
 }
 .footer-socialmedia-item {
     width: 40px;
     height: 40px;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content:center;
     align-items: center;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    fill: var(--body-background-color);
 }
 .footer-socialmedia-item:focus,
 .footer-socialmedia-item:hover {
@@ -543,7 +544,7 @@ body {
     left:0px;
     background: var(--accent-color);
     border-radius: 2px;
-     transition-delay: 250ms;
+     transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-active::after{
@@ -554,7 +555,7 @@ body {
     top:46px;
     left:0;
     background: var(--accent-color);
-     transition-delay: 250ms;
+     transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-box {
@@ -575,7 +576,7 @@ body {
 .overlay-box:hover .overlay {
   transform: translatex(0);
   background: rgba(33, 150, 243, 0.9);
-  transition-delay: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-text {
